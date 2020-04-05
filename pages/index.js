@@ -3,40 +3,26 @@ import Head from 'next/head'
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>Ayok #DirumahAja</title>
+      <link rel="icon" href="/assets/img/app/png/miloo-small.png" />
     </Head>
 
     <main>
       <h1 className="title">
-        #DirumahAja
+        Ayok #DirumahAja
       </h1>
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+
+      <p className="description">
+        Tetap aman bantu ringankan beban
+      </p>
+
+      <div className="grid">
+        <a target="blank" href="https://archisdi.me" className="card">
+          <img src="/assets/img/app/png/playstore.png" height="70%" width="70%" />
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
+        <a target="blank" href="https://archisdi.me" className="card">
+          <img src="/assets/img/app/png/appstore.png" height="60%" width="60%" />
         </a>
       </div>
     </main>
@@ -47,7 +33,7 @@ const Home = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
+        developed by <img src="/assets/img/app/png/miloo-logo.png" height="7%" width="7%" />
       </a>
     </footer>
 
@@ -106,9 +92,10 @@ const Home = () => (
       }
 
       .title {
+        color: #0070f3
         margin: 0;
         line-height: 1.15;
-        font-size: 4rem;
+        font-size: 3rem;
       }
 
       .title,
@@ -137,30 +124,23 @@ const Home = () => (
         flex-wrap: wrap;
 
         max-width: 800px;
-        margin-top: 3rem;
+        margin-top: 1rem;
       }
 
       .card {
-        margin: 1rem;
+        margin: 0.5rem;
         flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
+        padding: 0.5rem;
+        text-align: center;
         color: inherit;
         text-decoration: none;
-        border: 1px solid #eaeaea;
+        // border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
       }
 
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
       .card h3 {
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
         font-size: 1.5rem;
       }
 
